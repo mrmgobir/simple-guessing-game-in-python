@@ -1,14 +1,14 @@
-import random
+import random  
 
 randomNumbers = random.randint(1,100)
-userChoice = 0
+Guess = 0
 
-while userChoice != randomNumbers:
-    userChoice = int(input("Guess the number in my mind: "))
-    if userChoice < randomNumbers:
-        print("Your choice is too low!")
+while Guess != randomNumbers:
+    Guess = int(input("Guess the number on my mind: "))
+    if Guess < randomNumbers:
+        print("Guess Higher!")
 
-    elif userChoice > randomNumbers:
-        print("Your choice is too high!")
+    elif Guess > randomNumbers:
+        print("Guess Lower!")
 
-print("You've quessed correcty!")
+print(f"Correct :) i was thinking of {randomNumbers}!")
